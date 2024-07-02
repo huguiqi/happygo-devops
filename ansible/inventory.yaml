@@ -1,0 +1,12 @@
+zaxh:
+  hosts:
+    local:
+      ansible_host: 127.0.0.1
+    happygo:
+      ansible_host: happygo
+      ansible_port: 22
+      ansible_user: root
+      ansible_ssh_private_key_file: /Users/huguiqi/.ssh/id_rsa
+  vars:
+    ansible_user: root
+

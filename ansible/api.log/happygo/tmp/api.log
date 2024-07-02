@@ -1,0 +1,386 @@
+Already up-to-date.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:framework:jar:4.3
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.qiniu:qiniu-java-sdk:jar -> version (?) vs 7.4.0 @ cn.lili:framework:${revision}, /home/source/happygo/framework/pom.xml, line 22, column 21
+[WARNING] 'dependencies.dependency.systemPath' for com.qiyuesuo.sdk:SDK:jar should not point at files within the project directory, ${project.basedir}/src/main/resources/maven-repository/SF-CSIM-EXPRESS-SDK-V2.1.7.jar will be unresolvable by dependent projects @ cn.lili:framework:${revision}, /home/source/happygo/framework/pom.xml, line 461, column 25
+[WARNING] 'version' contains an expression but should be a constant. @ cn.lili:lili-shop-parent:${revision}, /home/source/happygo/pom.xml, line 16, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:buyer-api:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:manager-api:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:seller-api:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:common-api:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:consumer:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:admin:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:im-api:jar:4.3
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.lili:lili-shop-parent:pom:4.3
+[WARNING] 'version' contains an expression but should be a constant. @ cn.lili:lili-shop-parent:${revision}, /home/source/happygo/pom.xml, line 16, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.quartz-scheduler:quartz:jar with value '*' does not match a valid id pattern. @ org.springframework.boot:spring-boot-dependencies:2.4.10, /root/.m2/repository/org/springframework/boot/spring-boot-dependencies/2.4.10/spring-boot-dependencies-2.4.10.pom, line 1671, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] framework
+[INFO] buyer-api
+[INFO] manager-api
+[INFO] seller-api
+[INFO] common-api
+[INFO] consumer
+[INFO] admin
+[INFO] im-api
+[INFO] lili-shop-parent
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building framework 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ framework ---
+[INFO] Deleting /home/source/happygo/framework/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ framework ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1261 source files to /home/source/happygo/framework/target/classes
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: 某些输入文件使用或覆盖了已过时的 API。
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/framework/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ framework ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ framework ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ framework ---
+[INFO] Building jar: /home/source/happygo/framework/target/framework-4.3.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ framework ---
+[INFO] Installing /home/source/happygo/framework/target/framework-4.3.jar to /root/.m2/repository/cn/lili/framework/4.3/framework-4.3.jar
+[INFO] Installing /home/source/happygo/framework/pom.xml to /root/.m2/repository/cn/lili/framework/4.3/framework-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building buyer-api 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ buyer-api ---
+[INFO] Deleting /home/source/happygo/buyer-api/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ buyer-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ buyer-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 50 source files to /home/source/happygo/buyer-api/target/classes
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java使用或覆盖了已过时的 API。
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ buyer-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ buyer-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/source/happygo/buyer-api/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ buyer-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ buyer-api ---
+[INFO] Building jar: /home/source/happygo/buyer-api/target/buyer-api-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ buyer-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ buyer-api ---
+[INFO] Installing /home/source/happygo/buyer-api/target/buyer-api-4.3.jar to /root/.m2/repository/cn/lili/buyer-api/4.3/buyer-api-4.3.jar
+[INFO] Installing /home/source/happygo/buyer-api/pom.xml to /root/.m2/repository/cn/lili/buyer-api/4.3/buyer-api-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building manager-api 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ manager-api ---
+[INFO] Deleting /home/source/happygo/manager-api/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ manager-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ manager-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 93 source files to /home/source/happygo/manager-api/target/classes
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java使用或覆盖了已过时的 API。
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ manager-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ manager-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /home/source/happygo/manager-api/target/test-classes
+[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ manager-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ manager-api ---
+[INFO] Building jar: /home/source/happygo/manager-api/target/manager-api-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ manager-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ manager-api ---
+[INFO] Installing /home/source/happygo/manager-api/target/manager-api-4.3.jar to /root/.m2/repository/cn/lili/manager-api/4.3/manager-api-4.3.jar
+[INFO] Installing /home/source/happygo/manager-api/pom.xml to /root/.m2/repository/cn/lili/manager-api/4.3/manager-api-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building seller-api 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ seller-api ---
+[INFO] Deleting /home/source/happygo/seller-api/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ seller-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ seller-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 50 source files to /home/source/happygo/seller-api/target/classes
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java使用或覆盖了已过时的 API。
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ seller-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/seller-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ seller-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ seller-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ seller-api ---
+[INFO] Building jar: /home/source/happygo/seller-api/target/seller-api-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ seller-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ seller-api ---
+[INFO] Installing /home/source/happygo/seller-api/target/seller-api-4.3.jar to /root/.m2/repository/cn/lili/seller-api/4.3/seller-api-4.3.jar
+[INFO] Installing /home/source/happygo/seller-api/pom.xml to /root/.m2/repository/cn/lili/seller-api/4.3/seller-api-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building common-api 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ common-api ---
+[INFO] Deleting /home/source/happygo/common-api/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ common-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 30 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ common-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /home/source/happygo/common-api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ common-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/common-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ common-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ common-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ common-api ---
+[INFO] Building jar: /home/source/happygo/common-api/target/common-api-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ common-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ common-api ---
+[INFO] Installing /home/source/happygo/common-api/target/common-api-4.3.jar to /root/.m2/repository/cn/lili/common-api/4.3/common-api-4.3.jar
+[INFO] Installing /home/source/happygo/common-api/pom.xml to /root/.m2/repository/cn/lili/common-api/4.3/common-api-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building consumer 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ consumer ---
+[INFO] Deleting /home/source/happygo/consumer/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ consumer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ consumer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 74 source files to /home/source/happygo/consumer/target/classes
+[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: 某些输入文件使用了未经检查或不安全的操作。
+[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ consumer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/consumer/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ consumer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/source/happygo/consumer/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ consumer ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ consumer ---
+[INFO] Building jar: /home/source/happygo/consumer/target/consumer-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ consumer ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ consumer ---
+[INFO] Installing /home/source/happygo/consumer/target/consumer-4.3.jar to /root/.m2/repository/cn/lili/consumer/4.3/consumer-4.3.jar
+[INFO] Installing /home/source/happygo/consumer/pom.xml to /root/.m2/repository/cn/lili/consumer/4.3/consumer-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building admin 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ admin ---
+[INFO] Deleting /home/source/happygo/admin/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ admin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/source/happygo/admin/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/admin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ admin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ admin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ admin ---
+[INFO] Building jar: /home/source/happygo/admin/target/admin-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ admin ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ admin ---
+[INFO] Installing /home/source/happygo/admin/target/admin-4.3.jar to /root/.m2/repository/cn/lili/admin/4.3/admin-4.3.jar
+[INFO] Installing /home/source/happygo/admin/pom.xml to /root/.m2/repository/cn/lili/admin/4.3/admin-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building im-api 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ im-api ---
+[INFO] Deleting /home/source/happygo/im-api/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ im-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ im-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /home/source/happygo/im-api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ im-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/source/happygo/im-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ im-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ im-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ im-api ---
+[INFO] Building jar: /home/source/happygo/im-api/target/im-api-4.3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.10:repackage (repackage) @ im-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ im-api ---
+[INFO] Installing /home/source/happygo/im-api/target/im-api-4.3.jar to /root/.m2/repository/cn/lili/im-api/4.3/im-api-4.3.jar
+[INFO] Installing /home/source/happygo/im-api/pom.xml to /root/.m2/repository/cn/lili/im-api/4.3/im-api-4.3.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building lili-shop-parent 4.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ lili-shop-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ lili-shop-parent ---
+[INFO] Installing /home/source/happygo/pom.xml to /root/.m2/repository/cn/lili/lili-shop-parent/4.3/lili-shop-parent-4.3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] framework ......................................... SUCCESS [22.979s]
+[INFO] buyer-api ......................................... SUCCESS [4.116s]
+[INFO] manager-api ....................................... SUCCESS [4.191s]
+[INFO] seller-api ........................................ SUCCESS [3.154s]
+[INFO] common-api ........................................ SUCCESS [2.466s]
+[INFO] consumer .......................................... SUCCESS [4.023s]
+[INFO] admin ............................................. SUCCESS [0.428s]
+[INFO] im-api ............................................ SUCCESS [2.467s]
+[INFO] lili-shop-parent .................................. SUCCESS [0.002s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 44.167s
+[INFO] Finished at: Mon Jun 24 18:59:27 CST 2024
+[INFO] Final Memory: 167M/1745M
+[INFO] ------------------------------------------------------------------------

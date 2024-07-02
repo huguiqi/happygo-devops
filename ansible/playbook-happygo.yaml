@@ -1,0 +1,112 @@
+- name: zaxh tasks for test3
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Compile produce  using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce 
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - produce
+
+    - name: Compile frpza using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za 
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - za
+
+    - name: Compile produce-server  using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce/service-produce-server
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - produce-server
+
+    - name: Display Maven output
+      debug:
+        var: maven_output.stdout_lines
+      tags:
+      - produce
+      - produce-server
+      - za
+
+- hosts: happygo
+  remote_user: root
+  become: yes
+  tasks:
+   - name: Create log file
+     file:
+        path: /tmp/api.log
+        state: touch
+        owner: root
+        group: root
+        mode: '0644'  
+   - name: check server pid
+     shell: ps -ef | grep 'buyer' | grep 'java' | grep -v grep | awk '{print $2}'
+     ignore_errors: True
+     register: checkBuyer_output
+     tags:
+     - checkBuyer
+
+   - name: deploy all server
+     shell: | 
+      cd /home/source
+      sh ./api.sh > /tmp/api.log
+     register: script_api_output
+     async: 600
+     poll: 10      
+     tags:
+     - deployALL
+     
+   - name: deploy buyerapi server
+     shell: | 
+        cd /home/source 
+        sh ./startAPISingle.sh buyer > /tmp/buyer.log       
+     register: buyerapi_output
+     async: 3600
+     poll: 10
+     tags:
+     - deployBuyer
+  
+   - name: Display checkBuyer output
+     debug:
+        var: checkBuyer_output.stdout_lines
+     tags:
+     - checkBuyer
+
+   - name: Fetch deployALL script API log
+     fetch:
+       src: /tmp/api.log
+       dest: ./api.log
+     when: script_api_output.changed
+     tags:
+      - deployALL
+   - name: Fetch deployBuyer script API log
+     fetch:
+       src: /tmp/buyer.log
+       dest: ./buyer.log
+     when: buyerapi_output.changed
+     tags:
+      - deployBuyer
+
+   - name: Check nohup.log file status
+     stat:
+        path: /home/source/api/nohup.out
+     register: out_log_file
+     async: 300
+     poll: 10     
+     tags:
+     - nohup
+
+   - name: Fetch new out log content
+     fetch:
+        src: /home/source/api/nohup.out
+        dest: ./nohup.log
+        flat: yes
+     when: out_log_file.stat.exists and out_log_file.stat.size > 0 and out_log_file.stat.checksum != lookup('file', './nohup.log', checksum_algorithm='sha1')      
+     tags:
+       - nohup
