@@ -1,36 +1,36 @@
 - name: snbt tasks for test1
-  hosts: test1
-  remote_user: root
+  hosts: localhost
+  connection: local
   tasks:
-   - name: Create log file
-     file:
-        path: /tmp/test.log
-        state: touch
-        owner: root
-        group: root
-        mode: '0644'  
-        
-   - name: check server pid
-     shell: ps -ef | grep 'tongweb' | grep '/bin/java' | grep -v grep | awk '{print $2}'
-     ignore_errors: True
-     register: result_pid
-     tags:
-     - stop
-   - name: kill pid
-     shell: kill -9 {{result_pid.stdout}}
-     when: result_pid.stdout|int > 0
-     tags:
-     - stop
-   - name: restart server
-     shell: cd /data/Seeyon/TongWeb7/bin/ && ./restart.sh
-     tags:
-     - restart
+    - name: Compile produce  using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce 
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - produce
 
-   - name: clean data backup
-     cron: 
-        name: playbook for clean /data/backup
-        day: /2
-        job: /bin/bash -x /data/Seeyon/shell/clean.sh
-        state: present
-     tags:
-     - jop
+    - name: Compile frpza using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za 
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - za
+
+    - name: Compile produce-server  using Maven
+      shell: |
+        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce/service-produce-server
+        mvn clean package -DskipTests
+      register: maven_output
+      tags:
+      - produce-server
+
+    - name: Display Maven output
+      debug:
+        var: maven_output.stdout_lines
+      tags:
+      - produce
+      - produce-server
+      - za
+    

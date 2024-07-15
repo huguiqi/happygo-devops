@@ -1,39 +1,4 @@
-- name: zaxh tasks for test3
-  hosts: localhost
-  connection: local
-  tasks:
-    - name: Compile produce  using Maven
-      shell: |
-        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce 
-        mvn clean package -DskipTests
-      register: maven_output
-      tags:
-      - produce
-
-    - name: Compile frpza using Maven
-      shell: |
-        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za 
-        mvn clean package -DskipTests
-      register: maven_output
-      tags:
-      - za
-
-    - name: Compile produce-server  using Maven
-      shell: |
-        cd /Users/huguiqi/Public/javaWorkspace/zaxh/frp_project/za/za-service/service-produce/service-produce-server
-        mvn clean package -DskipTests
-      register: maven_output
-      tags:
-      - produce-server
-
-    - name: Display Maven output
-      debug:
-        var: maven_output.stdout_lines
-      tags:
-      - produce
-      - produce-server
-      - za
-
+- name: zaxh tasks for happygo
 - hosts: happygo
   remote_user: root
   become: yes
@@ -110,3 +75,51 @@
      when: out_log_file.stat.exists and out_log_file.stat.size > 0 and out_log_file.stat.checksum != lookup('file', './nohup.log', checksum_algorithm='sha1')      
      tags:
        - nohup
+
+
+   - name: sslBack existing ssl cert files for happygo-server
+     shell: | 
+       cd /etc/nginx
+       sh ./sslback.sh
+     register: remote_output
+     tags: sslUpload
+
+   - name: Pause before sslUpload
+     pause:
+        seconds: 3      # 延迟 5 秒
+     tags: sslUpload
+
+   - name: Upload certs file to remote server
+     copy:
+      src: /Users/huguiqi/Documents/私有文档/小程序开发/20240715_cert/
+      dest: /etc/nginx/ssl/
+      force: yes  # 强制覆盖
+      owner: root
+      group: root
+      mode: '0644'
+     ignore_errors: yes  # 忽略错误
+     register: remote_output
+     tags:
+       - sslUpload
+
+   - name: Pause before restart nginx
+     pause:
+        seconds: 2      # 延迟 2 秒
+     tags: 
+        - sslUpload
+
+   - name: restart nginx for happygo-server
+     shell: | 
+       systemctl restart nginx
+     register: remote_output
+     tags: 
+        - sslUpload
+        - restartNginx
+
+
+   - name: Display remoteStdout output
+     debug:
+      var: remote_output
+     tags:
+       - sslUpload
+       - restartNginx
