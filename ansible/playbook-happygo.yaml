@@ -1,4 +1,3 @@
-- name: zaxh tasks for happygo
 - hosts: happygo
   remote_user: root
   become: yes
@@ -119,7 +118,25 @@
 
    - name: Display remoteStdout output
      debug:
-      var: remote_output
+      msg: "remoteStdout out: {{ remote_output }}"
      tags:
        - sslUpload
        - restartNginx
+       - deployImFront
+  
+   - name: deploy im front
+     shell: | 
+        cd /home/source/happygo-front 
+        git pull -f origin main
+        cd im
+        rm -rf ./dist
+        yarn install
+        yarn build
+        systemctl restart nginx
+     register: remote_output
+     tags:
+       - deployImFront
+
+   - name: Debug inventory
+     debug:
+       msg: "debug inventory: {{ groups['happygo'] }}"
