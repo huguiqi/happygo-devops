@@ -1,4 +1,7 @@
-Already up-to-date.
+Updating 80d51b9..fb9322a
+Fast-forward
+ .../payment/kit/plugin/wechat/WechatPlugin.java    | 43 ++++++++++++++++++----
+ 1 file changed, 36 insertions(+), 7 deletions(-)
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for cn.lili:framework:jar:4.3
@@ -52,6 +55,8 @@ Already up-to-date.
 [INFO] ------------------------------------------------------------------------
 [INFO] Building framework 4.3
 [INFO] ------------------------------------------------------------------------
+Downloading: https://maven.aliyun.com/repository/public/com/aliyun/tea/maven-metadata.xml
+3/3 KB            Downloaded: https://maven.aliyun.com/repository/public/com/aliyun/tea/maven-metadata.xml (3 KB at 2.3 KB/sec)
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ framework ---
 [INFO] Deleting /home/source/happygo/framework/target
@@ -63,11 +68,11 @@ Already up-to-date.
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ framework ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1261 source files to /home/source/happygo/framework/target/classes
-[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: 某些输入文件使用或覆盖了已过时的 API。
-[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: 某些输入文件使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] Compiling 1285 source files to /home/source/happygo/framework/target/classes
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: Some input files use or override a deprecated API.
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/payment/kit/plugin/unionpay/UnionPayPlugin.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/source/happygo/framework/src/main/java/cn/lili/modules/distribution/serviceimpl/DistributionGoodsServiceImpl.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ framework ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -101,10 +106,10 @@ Already up-to-date.
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ buyer-api ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 50 source files to /home/source/happygo/buyer-api/target/classes
-[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java使用或覆盖了已过时的 API。
-[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java uses or overrides a deprecated API.
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/security/BuyerAuthenticationFilter.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java uses unchecked or unsafe operations.
+[INFO] /home/source/happygo/buyer-api/src/main/java/cn/lili/controller/member/FootprintController.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ buyer-api ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -141,11 +146,11 @@ Already up-to-date.
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ manager-api ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 93 source files to /home/source/happygo/manager-api/target/classes
-[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java使用或覆盖了已过时的 API。
-[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 某些输入文件使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] Compiling 94 source files to /home/source/happygo/manager-api/target/classes
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java uses or overrides a deprecated API.
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/source/happygo/manager-api/src/main/java/cn/lili/security/ManagerAuthenticationFilter.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ manager-api ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -153,9 +158,9 @@ Already up-to-date.
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ manager-api ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 7 source files to /home/source/happygo/manager-api/target/test-classes
-[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: 某些输入文件使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] Compiling 8 source files to /home/source/happygo/manager-api/target/test-classes
+[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/source/happygo/manager-api/src/test/java/cn/lili/test/elasticsearch/EsTest.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ manager-api ---
 [INFO] Tests are skipped.
@@ -185,10 +190,10 @@ Already up-to-date.
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ seller-api ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 50 source files to /home/source/happygo/seller-api/target/classes
-[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java使用或覆盖了已过时的 API。
-[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: 某些输入文件使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java uses or overrides a deprecated API.
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/security/StoreAuthenticationFilter.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/source/happygo/seller-api/src/main/java/cn/lili/controller/permission/ClerkStoreController.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ seller-api ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -249,7 +254,8 @@ Already up-to-date.
 [INFO] ------------------------------------------------------------------------
 [INFO] Building consumer 4.3
 [INFO] ------------------------------------------------------------------------
-[INFO] 
+Downloading: file:////home/source/happygo/consumer/maven-repository/com/aliyun/tea/maven-metadata.xml
+         [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ consumer ---
 [INFO] Deleting /home/source/happygo/consumer/target
 [INFO] 
@@ -260,9 +266,9 @@ Already up-to-date.
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ consumer ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 74 source files to /home/source/happygo/consumer/target/classes
-[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: 某些输入文件使用了未经检查或不安全的操作。
-[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] Compiling 75 source files to /home/source/happygo/consumer/target/classes
+[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/source/happygo/consumer/src/main/java/cn/lili/trigger/AbstractDelayQueueListen.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ consumer ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -368,19 +374,19 @@ Already up-to-date.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] framework ......................................... SUCCESS [22.979s]
-[INFO] buyer-api ......................................... SUCCESS [4.116s]
-[INFO] manager-api ....................................... SUCCESS [4.191s]
-[INFO] seller-api ........................................ SUCCESS [3.154s]
-[INFO] common-api ........................................ SUCCESS [2.466s]
-[INFO] consumer .......................................... SUCCESS [4.023s]
-[INFO] admin ............................................. SUCCESS [0.428s]
-[INFO] im-api ............................................ SUCCESS [2.467s]
-[INFO] lili-shop-parent .................................. SUCCESS [0.002s]
+[INFO] framework ......................................... SUCCESS [25.775s]
+[INFO] buyer-api ......................................... SUCCESS [4.765s]
+[INFO] manager-api ....................................... SUCCESS [4.928s]
+[INFO] seller-api ........................................ SUCCESS [3.610s]
+[INFO] common-api ........................................ SUCCESS [2.865s]
+[INFO] consumer .......................................... SUCCESS [4.556s]
+[INFO] admin ............................................. SUCCESS [0.421s]
+[INFO] im-api ............................................ SUCCESS [3.008s]
+[INFO] lili-shop-parent .................................. SUCCESS [0.107s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 44.167s
-[INFO] Finished at: Mon Jun 24 18:59:27 CST 2024
-[INFO] Final Memory: 167M/1745M
+[INFO] Total time: 50.403s
+[INFO] Finished at: Thu Aug 08 00:04:59 CST 2024
+[INFO] Final Memory: 175M/1516M
 [INFO] ------------------------------------------------------------------------

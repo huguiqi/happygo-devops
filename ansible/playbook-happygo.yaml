@@ -137,6 +137,20 @@
      tags:
        - deployImFront
 
+   - name: deploy manager front
+     shell: | 
+        cd /home/source/happygo-front 
+        git pull -f origin main
+        cd manager
+        rm -rf ./dist
+        yarn install
+        yarn build
+        systemctl restart nginx
+     register: remote_output
+     tags:
+       - deployManagerFront
+       
+
    - name: Debug inventory
      debug:
        msg: "debug inventory: {{ groups['happygo'] }}"
