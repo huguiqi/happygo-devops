@@ -1,4 +1,4 @@
-- hosts: happygo
+d- hosts: happygo
   remote_user: root
   become: yes
   tasks:
@@ -118,7 +118,7 @@
 
    - name: Display remoteStdout output
      debug:
-      msg: "remoteStdout out: {{ remote_output }}"
+      var: remote_output
      tags:
        - sslUpload
        - restartNginx
@@ -126,7 +126,7 @@
   
    - name: deploy im front
      shell: | 
-        cd /home/source/happygo-front 
+        cd /home/source/happygo-front
         git pull -f origin main
         cd im
         rm -rf ./dist
