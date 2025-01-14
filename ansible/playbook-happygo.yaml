@@ -1,4 +1,4 @@
-d- hosts: happygo
+- hosts: happygo
   remote_user: root
   become: yes
   tasks:
@@ -90,7 +90,7 @@ d- hosts: happygo
 
    - name: Upload certs file to remote server
      copy:
-      src: /Users/huguiqi/Documents/私有文档/小程序开发/20240715_cert/
+      src: /Users/huguiqi/Documents/私有文档/小程序开发/20250114_cert/
       dest: /etc/nginx/ssl/
       force: yes  # 强制覆盖
       owner: root
@@ -105,6 +105,16 @@ d- hosts: happygo
      pause:
         seconds: 2      # 延迟 2 秒
      tags: 
+        - sslUpload
+
+   - name: rename www.gohappy.ltd.key
+     shell: | 
+       cd /etc/nginx/ssl
+       mv www.gohappy.ltd.pem gohappy.ltd.pem
+       mv www.gohappy.ltd.key gohappy.ltd.key
+     register: remote_output
+     tags: 
+        - renameCert
         - sslUpload
 
    - name: restart nginx for happygo-server
@@ -136,6 +146,20 @@ d- hosts: happygo
      register: remote_output
      tags:
        - deployImFront
+
+   - name: deploy manager front
+     shell: | 
+        cd /home/source/happygo-front 
+        git pull -f origin main
+        cd manager
+        rm -rf ./dist
+        yarn install
+        yarn build
+        systemctl restart nginx
+     register: remote_output
+     tags:
+       - deployManagerFront
+       
 
    - name: Debug inventory
      debug:

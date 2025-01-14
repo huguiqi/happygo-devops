@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+Updating 80d51b9..fb9322a
+Fast-forward
+ .../payment/kit/plugin/wechat/WechatPlugin.java    | 43 ++++++++++++++++++----
+ 1 file changed, 36 insertions(+), 7 deletions(-)
+>>>>>>> 759f8365afb776863d7126baa0855023dd8b7350
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for cn.lili:framework:jar:4.3
@@ -51,6 +58,8 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Building framework 4.3
 [INFO] ------------------------------------------------------------------------
+Downloading: https://maven.aliyun.com/repository/public/com/aliyun/tea/maven-metadata.xml
+3/3 KB            Downloaded: https://maven.aliyun.com/repository/public/com/aliyun/tea/maven-metadata.xml (3 KB at 2.3 KB/sec)
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ framework ---
 [INFO] Deleting /home/source/happygo/framework/target
@@ -248,7 +257,8 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Building consumer 4.3
 [INFO] ------------------------------------------------------------------------
-[INFO] 
+Downloading: file:////home/source/happygo/consumer/maven-repository/com/aliyun/tea/maven-metadata.xml
+         [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ consumer ---
 [INFO] Deleting /home/source/happygo/consumer/target
 [INFO] 
@@ -367,6 +377,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
+<<<<<<< HEAD
 [INFO] framework ......................................... SUCCESS [23.219s]
 [INFO] buyer-api ......................................... SUCCESS [4.154s]
 [INFO] manager-api ....................................... SUCCESS [3.949s]
@@ -382,4 +393,21 @@
 [INFO] Total time: 46.326s
 [INFO] Finished at: Mon Nov 04 01:30:47 CST 2024
 [INFO] Final Memory: 168M/1735M
+=======
+[INFO] framework ......................................... SUCCESS [25.775s]
+[INFO] buyer-api ......................................... SUCCESS [4.765s]
+[INFO] manager-api ....................................... SUCCESS [4.928s]
+[INFO] seller-api ........................................ SUCCESS [3.610s]
+[INFO] common-api ........................................ SUCCESS [2.865s]
+[INFO] consumer .......................................... SUCCESS [4.556s]
+[INFO] admin ............................................. SUCCESS [0.421s]
+[INFO] im-api ............................................ SUCCESS [3.008s]
+[INFO] lili-shop-parent .................................. SUCCESS [0.107s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.403s
+[INFO] Finished at: Thu Aug 08 00:04:59 CST 2024
+[INFO] Final Memory: 175M/1516M
+>>>>>>> 759f8365afb776863d7126baa0855023dd8b7350
 [INFO] ------------------------------------------------------------------------
